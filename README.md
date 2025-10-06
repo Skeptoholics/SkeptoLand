@@ -1,9 +1,9 @@
 # Skeptoholics Blog  
 
-Welcome to **Skeptoholics**, a place for critical thinking and skeptical inquiry.  
+Welcome to **Skeptoholics**, a safe place, free from reality to explore critical thinking and skeptical inquiry.  
 
 ## About  
-This blog features articles that challenge assumptions, demand evidence, and explore truth through rational analysis.  
+This site features articles that challenge assumptions, disect evidence, and explore apparent truths through rational analysis.  
 
 ## Read Our Latest Article  
 [Question Everything](article1.html)  
