@@ -161,3 +161,67 @@ nav button:hover {
 .article-content em {
   color: var(--text-muted, #666);
 }
+/* === Classified Dossier Styling === */
+
+/* Classification Stamps */
+.redacted {
+  display: block;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  color: #b30000; /* deep red, stamped look */
+  border: 2px solid #b30000;
+  padding: 6px;
+  margin: 20px 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* Redacted Text (black bars) */
+span.redacted {
+  background: black;
+  color: black;
+  padding: 0 6px;
+  border-radius: 2px;
+}
+
+/* Transcripts & Reports */
+blockquote.transcript {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95em;
+  background: #f4f4f4;
+  border-left: 5px solid #444;
+  padding: 10px 15px;
+  margin: 20px 0;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* Analyst Notes */
+em {
+  background: #fff6c1; /* soft yellow highlight */
+  padding: 2px 4px;
+  font-style: italic;
+  border-radius: 2px;
+}
+
+/* Missing File / Gap Indicators */
+.missing {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  color: #666;
+  background: #eee;
+  padding: 5px 8px;
+  margin: 15px 0;
+  border-left: 3px solid #999;
+}
+
+/* Article Header (stamp-like effect) */
+.article-header h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
