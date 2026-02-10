@@ -1,59 +1,54 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact — Skeptoholics</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact — Skeptoholics</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">🧠 Skeptoholics</h1>
-      <p class="tagline">Question everything. Verify twice.</p>
-      <nav>
-        <ul>
-          <li><a id="toggleTheme" href="#">Toggle Theme</a></li>
-          <li><a id="toggleUV" href="#">UV Light</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="intro">
-      <h2>Contact</h2>
-      <p>Send a message. Your email address is not shown on the page.</p>
-      <p class="uv-hidden" data-uv>UV NOTE: If you can see this, you're using the dark theme + UV light. Good.</p>
-    </section>
-
-    <section class="card">
-      <h3>Message</h3>
-      <p class="meta">This form requires a backend endpoint to send email.</p>
-      <form class="contact-form" method="POST" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID">
-        <label>
+<header class="site-header">
+<div class="container">
+<h1 class="logo">🧠 Skeptoholics</h1>
+<p class="tagline">Question everything. Verify twice.</p>
+<nav>
+<ul>
+<li><a href="#" id="toggleTheme">Toggle Theme</a></li>
+<li><a href="#" id="toggleUV">UV Light</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main class="container">
+<section class="intro">
+<h2>Contact</h2>
+<p>Send a message. Your email address is not shown on the page.</p><p><span class="uv-hidden" data-uv="1">Messages are signals. Signals can be spoofed. Context matters.</span></p>
+<p class="uv-hidden" data-uv="">If you can see this, you're using the dark theme + UV light. Good.</p>
+</section>
+<section class="card">
+<h3>Message</h3>
+<p class="meta">This form requires a backend endpoint to send email.</p><p><span class="uv-hidden" data-uv="1">Write like you're leaving a note for your future self.</span></p>
+<form action="#" class="contact-form" id="contactForm" method="POST"><input name="_next" type="hidden" value="contact.html?sent=1"/><input name="_template" type="hidden" value="table"/><input name="_subject" type="hidden" value="Skeptoholics contact form"/><input name="_captcha" type="hidden" value="false"/>
+<label>
           Subject
-          <input name="subject" type="text" required />
-        </label>
-
-        <label>
+          <input name="subject" required="" type="text"/>
+</label><div><span class="uv-hidden" data-uv="1">Assume misinterpretation; design around it.</span></div>
+<label>
           Message
-          <textarea name="message" rows="8" required></textarea>
-        </label>
-
-        <button type="submit" class="action-btn">Send</button>
-      </form>
-      <p class="meta">Setup: create a Formspree form and replace <code>REPLACE_WITH_YOUR_FORM_ID</code> with your form ID. The recipient email is configured in Formspree (not shown on the page).</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2025 Skeptoholics | Built with Pragmatic Curiosity</p>
-  </footer>
-
-    <script src="script.js" defer></script>
+          <textarea name="message" required="" rows="8"></textarea>
+</label>
+<button class="action-btn" type="submit">Send</button>
+</form>
+<p class="meta">Setup: create a Formspree form and replace <code>REPLACE_WITH_YOUR_FORM_ID</code> with your form ID. The recipient email is configured in Formspree (not shown on the page).</p>
+</section>
+</main>
+<footer class="site-footer">
+<p>© 2025 Skeptoholics | Built with Pragmatic Curiosity</p>
+</footer>
+<script defer="" src="script.js"></script>
 </body>
 </html>

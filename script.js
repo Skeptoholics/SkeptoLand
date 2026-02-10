@@ -87,6 +87,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+  // ---- Contact form endpoint (keeps email out of HTML) ----
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    // formsubmit.co endpoint; email is base64 to keep it out of the HTML
+    const b64 = 'c2tlcHRvaG9saWNzQGdtYWlsLmNvbQ==';
+    const email = atob(b64);
+    contactForm.action = `https://formsubmit.co/${email}`;
+
+    // lightweight success message on redirect (?sent=1)
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('sent') === '1') {
+        const box = document.createElement('p');
+        box.textContent = 'Message sent.';
+        box.style.marginTop = '1rem';
+        contactForm.parentElement.insertBefore(box, contactForm);
+      }
+    } catch (_) {}
+  }
+
   // init
   if (uvEnabled) setUV(true);
   else syncUVAvailability();

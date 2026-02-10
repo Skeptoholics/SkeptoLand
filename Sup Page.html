@@ -1,75 +1,68 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Skeptoholics — Question Everything</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Skeptoholics — Question Everything</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">🧠 Skeptoholics</h1>
-      <p class="tagline">Question everything. Verify twice.</p>
-      <nav>
-        <ul>
-          <li><a id="toggleTheme" href="#">Toggle Theme</a></li>
-          <li><a id="toggleUV" href="#">UV Light</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="intro">
-      <p><strong>Welcome.</strong> This is a clean, fast, static site you can host on GitHub Pages and point your GoDaddy domain at. Edit the posts below as individual pages later, or keep it as a single-page blog.</p>
-    </section>
-
-    <section class="articles-grid">
-      <article class="card">
-        <h2>Do You Actually Know the Earth is Round?</h2>
-        <p class="meta">October 5, 2025 • 6 min read</p>
-        <p>Most of us outsource certainty to authority. Here’s how to build your own chain of evidence—from shadows and sticks to airline routes—and why it matters.</p>
-        <a href="#">Read more →</a>
-      </article>
-
-      <article class="card">
-        <h2>Entropy, Belief, and Why Overconfidence Fails</h2>
-        <p class="meta">September 28, 2025 • 5 min read</p>
-        <p>If the world trends toward disorder, why do our models often assume tidy dynamics? A pragmatic case for building systems that expect to be wrong.</p>
-        <a href="#">Read more →</a>
-      </article>
-
-      <article class="card">
-        <h2>How to Be Wrong (and Win)</h2>
-        <p class="meta">September 10, 2025 • 4 min read</p>
-        <p>Precision matters, but so does flexibility. A short playbook for iterating toward truth without wrecking your momentum.</p>
-        <a href="#">Read more →</a>
-      </article>
-    </section>
-
-    <section class="intro" id="about">
-      <h2>About</h2>
-      <p>Skeptoholics is a small project about practical skepticism: use doubt as a tool, not an identity. The goal is decision-quality thinking—no mystique, no fluff.</p>
-    </section>
-
-    <section>
-      <h2>Stay in the loop</h2>
-      <p>There’s no tracker, no spam. When new posts drop, you’ll know.</p>
-      <p><a class="btn" href="mailto:you@example.com?subject=Subscribe%20me%20to%20Skeptoholics">Email me to subscribe</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Skeptoholics. All rights reserved. Made with disciplined doubt.</p>
-  </footer>
-
-  <script>
+<header class="site-header">
+<div class="container">
+<h1 class="logo">🧠 Skeptoholics</h1>
+<p class="tagline">Question everything. Verify twice.</p>
+<nav>
+<ul>
+<li><a href="#" id="toggleTheme">Toggle Theme</a></li>
+<li><a href="#" id="toggleUV">UV Light</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main class="container">
+<section class="intro">
+<p><strong>Welcome.</strong> This is a clean, fast, static site you can host on GitHub Pages and point your GoDaddy domain at. Edit the posts below as individual pages later, or keep it as a single-page blog.</p>
+</section>
+<section class="articles-grid">
+<article class="card">
+<h2>Do You Actually Know the Earth is Round?</h2>
+<p class="meta">October 5, 2025 • 6 min read</p><p><span class="uv-hidden" data-uv="1">Evidence is not a feeling — it's a trail you can walk.</span></p>
+<p>Most of us outsource certainty to authority. Here’s how to build your own chain of evidence—from shadows and sticks to airline routes—and why it matters.</p>
+<a href="#">Read more →</a>
+</article>
+<article class="card">
+<h2>Entropy, Belief, and Why Overconfidence Fails</h2>
+<p class="meta">September 28, 2025 • 5 min read</p>
+<p>If the world trends toward disorder, why do our models often assume tidy dynamics? A pragmatic case for building systems that expect to be wrong.</p>
+<a href="#">Read more →</a>
+</article>
+<article class="card">
+<h2>How to Be Wrong (and Win)</h2>
+<p class="meta">September 10, 2025 • 4 min read</p>
+<p>Precision matters, but so does flexibility. A short playbook for iterating toward truth without wrecking your momentum.</p>
+<a href="#">Read more →</a>
+</article><p><span class="uv-hidden" data-uv="1">Most certainty is rented, not owned.</span></p>
+</section>
+<section class="intro" id="about">
+<h2>About</h2><p><span class="uv-hidden" data-uv="1">A neat story is a social technology.</span></p>
+<p>Skeptoholics is a small project about practical skepticism: use doubt as a tool, not an identity. The goal is decision-quality thinking—no mystique, no fluff.</p>
+</section>
+<section>
+<h2>Stay in the loop</h2>
+<p>There’s no tracker, no spam. When new posts drop, you’ll know.</p>
+<p><a class="btn" href="mailto:you@example.com?subject=Subscribe%20me%20to%20Skeptoholics">Email me to subscribe</a></p>
+</section>
+</main>
+<footer class="site-footer">
+<p>© <span id="year"></span> Skeptoholics. All rights reserved. Made with disciplined doubt.</p>
+</footer>
+<script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-      <script src="script.js" defer></script>
+<script defer="" src="script.js"></script>
 </body>
 </html>
