@@ -226,8 +226,8 @@ em {
   margin-bottom: 15px;
 }
 
-/* Force Toggle Theme button to match the nav buttons */
-#toggleTheme {
+nav a,
+nav button {
   text-decoration: none;
   color: var(--text);
   background: none;
@@ -235,26 +235,10 @@ em {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
-
-  /* remove default button styling differences across browsers */
-  appearance: none;
-  -webkit-appearance: none;
-  font: inherit;
 }
 
-#toggleTheme:hover {
+nav a:hover,
+nav button:hover {
   background: var(--accent);
   color: white;
-}
-
-.site-header nav button {
-  border: 1px solid var(--accent) !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 4px !important;
-  background: none !important;
-  color: var(--text) !important;
-  font: inherit !important;
-  cursor: pointer !important;
-  appearance: none !important;
-  -webkit-appearance: none !important;
 }
