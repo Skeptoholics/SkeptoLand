@@ -246,3 +246,15 @@ em {
   background: var(--accent);
   color: white;
 }
+
+.site-header nav button {
+  border: 1px solid var(--accent) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px !important;
+  background: none !important;
+  color: var(--text) !important;
+  font: inherit !important;
+  cursor: pointer !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
