@@ -226,4 +226,23 @@ em {
   margin-bottom: 15px;
 }
 
+/* Force Toggle Theme button to match the nav buttons */
+#toggleTheme {
+  text-decoration: none;
+  color: var(--text);
+  background: none;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* remove default button styling differences across browsers */
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+}
+
+#toggleTheme:hover {
+  background: var(--accent);
+  color: white;
 }
