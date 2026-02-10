@@ -242,3 +242,105 @@ nav button:hover {
   background: var(--accent);
   color: white;
 }
+
+
+/* === UV Light Easter-egg (works only in dark mode) === */
+.uv-hidden,
+[data-uv] {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+/* Only reveal when UV is active and the cursor is near */
+.uv-active .uv-visible {
+  opacity: 1;
+  color: #b6ffcc; /* "UV ink" */
+  text-shadow: 0 0 6px rgba(120, 255, 190, 0.5);
+}
+
+/* UV toggle disabled hint (still styled like other nav buttons) */
+nav a.is-disabled {
+  opacity: 0.5;
+}
+
+/* Spotlight overlay */
+#uvSpot {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.uv-active #uvSpot {
+  opacity: 1;
+}
+
+/* Glow ring: translated to cursor position via transform */
+.uv-active #uvSpot::before {
+  content: "";
+  position: absolute;
+  left: -140px;
+  top: -140px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(160,255,210,0.18) 0%, rgba(120,255,190,0.10) 35%, rgba(0,0,0,0) 70%);
+  box-shadow: 0 0 18px rgba(120,255,190,0.25);
+  border: 1px solid rgba(120,255,190,0.25);
+}
+
+/* Prevent UV revealing in light mode even if enabled */
+:root[data-theme='light'] .uv-hidden,
+:root[data-theme='light'] [data-uv] {
+  opacity: 0 !important;
+}
+
+
+/* Action buttons (used in page content, not just nav) */
+.action-btn,
+button.action-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text);
+  background: none;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-btn:hover,
+button.action-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Contact form */
+.contact-form {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid rgba(127,127,127,0.35);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.contact-form textarea { resize: vertical; }

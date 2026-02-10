@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Skeptoholics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">🧠 Skeptoholics</h1>
+      <p class="tagline">Question everything. Verify twice.</p>
+      <nav>
+        <ul>
+          <li><a id="toggleTheme" href="#">Toggle Theme</a></li>
+          <li><a id="toggleUV" href="#">UV Light</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Contact</h2>
+      <p>Send a message. Your email address is not shown on the page.</p>
+      <p class="uv-hidden" data-uv>UV NOTE: If you can see this, you're using the dark theme + UV light. Good.</p>
+    </section>
+
+    <section class="card">
+      <h3>Message</h3>
+      <p class="meta">This form requires a backend endpoint to send email.</p>
+      <form class="contact-form" method="POST" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID">
+        <label>
+          Subject
+          <input name="subject" type="text" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="8" required></textarea>
+        </label>
+
+        <button type="submit" class="action-btn">Send</button>
+      </form>
+      <p class="meta">Setup: create a Formspree form and replace <code>REPLACE_WITH_YOUR_FORM_ID</code> with your form ID. The recipient email is configured in Formspree (not shown on the page).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Skeptoholics | Built with Pragmatic Curiosity</p>
+  </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
